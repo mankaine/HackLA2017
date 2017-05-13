@@ -50,34 +50,34 @@ class CongresspersonImport:
     def get_name(self, num=0):
         if self._data == "":
             self.conduct_call()
-        dick = self.get_data()
-        dick1 = json.dumps(dick)
-        dick2 = json.loads(dick1)
-        return dick2['results'][num]['name']
+        d = self.get_data()
+        d1 = json.dumps(d)
+        d2 = json.loads(d1)
+        return d2['results'][num]['name']
 
     def get_twitter(self, num=0):
         if self._data == "":
             self.conduct_call()
-        dick = self.get_data()
-        dick1 = json.dumps(dick)
-        dick2 = json.loads(dick1)
-        return dick2['results'][num]['twitter_id']
+        d = self.get_data()
+        d1 = json.dumps(d)
+        d2 = json.loads(d1)
+        return d2['results'][num]['twitter_id']
 
     def get_dist(self, num=0):
         if self._data == "":
             self.conduct_call()
-        dick = self.get_data()
-        dick1 = json.dumps(dick)
-        dick2 = json.loads(dick1)
-        return dick2['results'][num]['district'] + "th District"
+        d = self.get_data()
+        d1 = json.dumps(d)
+        d2 = json.loads(d1)
+        return d2['results'][num]['district'] + "th District"
 
     def get_party(self, num=0):
         if self._data == "":
             self.conduct_call()
-        dick = self.get_data()
-        dick1 = json.dumps(dick)
-        dick2 = json.loads(dick1)
-        return dick2['results'][num]['party']
+        d = self.get_data()
+        d1 = json.dumps(d)
+        d2 = json.loads(d1)
+        return d2['results'][num]['party']
     
     
 class DistrictImport:
